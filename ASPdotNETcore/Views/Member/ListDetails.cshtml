@@ -1,9 +1,24 @@
 @model List<ASPdotNETcore.Models.Member>
-<div class="col-md-4">
-    <button type="button" class="btn btn-success" onclick="window.location.href='/Member/Create'">Create new member <i
+
+<div class="row">
+    <div class="col-2">
+    <button type="button" class="btn btn-success" onclick="window.location.href='/Member/Create'">Create<i
             class="fa fa-plus"></i></button>
+    </div>
+    <div class="col-10">
+         @using (Html.BeginForm("ListDetails", "Member", FormMethod.Get))
+            {
+                <p class="row">
+                    @*@Html.TextBox("searchString", null, new { @class = "form-control col-md-3", @placeholder = "Nhập thông tin..." })*@
+                    <input class="form-control col-md-3" name="searchString" value="@ViewBag.CurrentFilter" placeholder="Type first name or last name ..." type="text">
+                    &nbsp;<button type="submit" class="btn btn-primary "><i class="fa fa-search"></i>Search</button>
+                </p>
+            }
+    </div>
+
 </div>
-<div class="table-responsive" style="margin-top: 20px">
+
+<div class="table-responsive" >
     <table class="table table-bordered table-hover" width="100%" cellspacing="0">
         <thead>
             <tr>
@@ -24,12 +39,13 @@
             <tbody id="row_@item.LastName">
                 <tr>
                     <td>
-                        <a href="/Member/Edit/@item.LastName" title="Sửa"><i class="fas fa-edit">Edit</i></a>
+                        <a href="/Member/Edit/@item.LastName" title="Edit"><i class="fas fa-edit">Edit</i></a><br>
+                        <a href="/Member/Details/@item.LastName" title="Details"><i class="fas fa-edit">Details</i></a><br>
 
-
-                        <a data-ajax="true" title="Xóa" data-ajax-complete="$('#row_@item.LastName ').remove()"
+                        @* <a data-ajax="true" title="Delete" data-ajax-complete="$('#row_@item.LastName ').remove()"
                             data-ajax-confirm="Are you sure wanto delete this member" data-ajax-method="Delete"
-                            href="/Member/Delete/@item.LastName"><i class="fa fa-trash" style="color:red">Delete</i></a>
+                            href="/Member/Delete/@item.LastName"><i class="fa fa-trash" style="color:red">Delete</i></a> *@
+                            @Html.ActionLink("Delete", "Delete", new { name = item.LastName })
 
                     </td>
 

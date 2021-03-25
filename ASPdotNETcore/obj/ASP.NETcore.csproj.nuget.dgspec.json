@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\OneDrive\\Desktop\\ASPdotNETcore\\ASP.NETcore.csproj": {}
+    "C:\\Users\\ASUS\\OneDrive\\Documents\\GitHub\\FormASPdotNetMVC\\ASPdotNETcore\\ASP.NETcore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\OneDrive\\Desktop\\ASPdotNETcore\\ASP.NETcore.csproj": {
+    "C:\\Users\\ASUS\\OneDrive\\Documents\\GitHub\\FormASPdotNetMVC\\ASPdotNETcore\\ASP.NETcore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ASPdotNETcore\\ASP.NETcore.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Documents\\GitHub\\FormASPdotNetMVC\\ASPdotNETcore\\ASP.NETcore.csproj",
         "projectName": "ASP.NETcore",
-        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ASPdotNETcore\\ASP.NETcore.csproj",
+        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Documents\\GitHub\\FormASPdotNetMVC\\ASPdotNETcore\\ASP.NETcore.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Desktop\\ASPdotNETcore\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Documents\\GitHub\\FormASPdotNetMVC\\ASPdotNETcore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
