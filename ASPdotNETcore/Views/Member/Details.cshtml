@@ -1,0 +1,100 @@
+@model  ASPdotNETcore.Models.Member;
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<body>
+    
+        <h1>Details Member</h1>
+  
+    <div class="card" style="margin-top:50px;">
+        
+        <div class="card-body">
+            <div>
+
+                <dl class="dl-horizontal row" id="ttct" style="padding-left:70px;">
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.FirstName)
+                    </dt>
+
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.FirstName)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.LastName)
+                    </dt>
+
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.LastName)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.Gender)
+                    </dt>
+
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.Gender)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.DateOfBirth)
+                    </dt>
+
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.DateOfBirth)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.BirthPlace)
+                    </dt>
+
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.BirthPlace)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.PhoneNumber)
+                    </dt>
+
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.PhoneNumber)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.isGraduate)
+                    </dt>
+
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.isGraduate)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model._StarDate)
+                    </dt>
+
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model._StarDate)
+                    </dd>
+
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model._EndDate)
+                    </dt>
+
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model._EndDate)
+                    </dd>
+
+                   
+
+                </dl>
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+  
+</body>

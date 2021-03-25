@@ -1,0 +1,52 @@
+@model List<ASPdotNETcore.Models.Member>
+<div class="col-md-4">
+    <button type="button" class="btn btn-success" onclick="window.location.href='/Member/Create'">Create new member <i
+            class="fa fa-plus"></i></button>
+</div>
+<div class="table-responsive" style="margin-top: 20px">
+    <table class="table table-bordered table-hover" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th></th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Date of birth</th>
+                <th>Birth place</th>
+                <th>Gender</th>
+                <th>Phone number</th>
+                <th>Graduated</th>
+                <th>Start date</th>
+                <th>End date</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tbody id="row_@item.LastName">
+                <tr>
+                    <td>
+                        <a href="/Member/Edit/@item.LastName" title="Sửa"><i class="fas fa-edit">Edit</i></a>
+
+
+                        <a data-ajax="true" title="Xóa" data-ajax-complete="$('#row_@item.LastName ').remove()"
+                            data-ajax-confirm="Are you sure wanto delete this member" data-ajax-method="Delete"
+                            href="/Member/Delete/@item.LastName"><i class="fa fa-trash" style="color:red">Delete</i></a>
+
+                    </td>
+
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                    <td>@item.DateOfBirth.Date</td>
+                    <td>@item.BirthPlace</td>
+                    <td>@item.Gender</td>
+                    <td>@item.PhoneNumber</td>
+                    <td>@item.isGraduate</td>
+                    <td>@item._StarDate.Date</td>
+                    <td>@item._EndDate</td>
+
+                </tr>
+            </tbody>
+        }
+    </table>
+
+
+</div>
