@@ -1,6 +1,7 @@
 
 
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 namespace ASPdotNETcore.Models
 {
@@ -31,4 +32,8 @@ namespace ASPdotNETcore.Models
         public Nullable<DateTime> _EndDate {get; set;}
         
     }
+    // public List<Member> GetListMember(Member mb)
+    // {
+    //     return new List<Member>();
+    // }
 }

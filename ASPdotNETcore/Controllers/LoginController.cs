@@ -61,5 +61,11 @@ namespace ASP.NETcore.Controllers
             return View();
         }
 
+          public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("username");
+            return RedirectToAction("Index","Home");
+        }
+
     }
 }

@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ASPdotNETcore.Service;
 
 namespace ASPdotNETcore
 {
@@ -26,6 +27,7 @@ namespace ASPdotNETcore
         {
             services.AddControllersWithViews();
             services.AddSession();
+            services.AddTransient<BirthPlace>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
